@@ -1,5 +1,7 @@
 @extends('admin.layout.master')
 @section('content')
+<section id="main-content">
+      <div class="wrapper">
 		<div class="row">
 			<div class="col-lg-12">
 				<h3 class="page-header">Courses</h3>
@@ -109,7 +111,12 @@
 		    	</div>
 		    </div>
 		  </div>
+		  <div class="panel-footer">
+		  	<button type="submit" class="btn btn-default">Create Course</button>
+		  </div>
 		</div>
+  </div>
+</section>
 
 @endsection
 

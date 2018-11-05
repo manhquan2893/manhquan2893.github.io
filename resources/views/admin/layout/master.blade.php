@@ -54,11 +54,9 @@
     <!--sidebar end-->
 
     <!--main content start-->
-    <section id="main-content">
-      <div class="wrapper">
-         @yield('content')
-      </div>
-    </section>
+    
+    @yield('content')
+    
     <!--main content end-->
   </section>
   <!-- container section start -->
