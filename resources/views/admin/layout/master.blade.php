@@ -7,6 +7,8 @@
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
   <link rel="shortcut icon" href="admin_asset/img/favicon.png">
 
   <title>Creative - Bootstrap Admin Template</title>
@@ -102,10 +104,16 @@
     <script src="admin_asset/js/sparklines.js"></script>
     <script src="admin_asset/js/charts.js"></script>
     <script src="admin_asset/js/jquery.slimscroll.min.js"></script>
-
-    @yield('script')
+    
     <script>
       //knob
+      $(document).ready(function(){
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+        });
+      });
       $(function() {
         $(".knob").knob({
           'draw': function() {
@@ -149,6 +157,7 @@
         });
       });
     </script>
+    @yield('script')
 
 </body>
 

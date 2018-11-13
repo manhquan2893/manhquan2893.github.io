@@ -18,9 +18,12 @@ route::post('login','LoginController@postLogin');
 route::get('login','LoginController@getLogin');
 
 route::get('dashboard','DashboardController@getDashboard')->middleware('MemberMiddleware');
-route::get('test',function(){
-	return view('admin.course.manageCourse');
-});
+
+/*---------Manage Course------------*/
+Route::get('manageCourse','CourseController@getManageCourse');
+Route::post('insertAcademic','CourseController@postInsertAcademic');
+Route::post('insertProgram','CourseController@postInsertProgram');
+Route::post('insertLevel','CourseController@postInsertLevel');
 
 
 
