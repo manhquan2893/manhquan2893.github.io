@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLevelTable extends Migration
+class CreateCourseTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreateLevelTable extends Migration
      */
     public function up()
     {
-        Schema::create('level', function (Blueprint $table) {
-            $table->increments('level_id');
-            $table->string('level');
+        Schema::create('course', function (Blueprint $table) {
+            $table->increments('course_id');
             $table->integer('program_id');
-            $table->string('description');
+            $table->integer('level_id');
+            $table->integer('shift_id');
+            $table->integer('time_id');
+            $table->string('start_date');
+            $table->string('end_date');
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ class CreateLevelTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('level');
+        Schema::dropIfExists('class');
     }
 }

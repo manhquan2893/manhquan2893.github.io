@@ -24,6 +24,23 @@ Route::get('manageCourse','CourseController@getManageCourse');
 Route::post('insertAcademic','CourseController@postInsertAcademic');
 Route::post('insertProgram','CourseController@postInsertProgram');
 Route::post('insertLevel','CourseController@postInsertLevel');
+Route::get('showLevel','CourseController@showLevel');
+Route::post('insertShift','CourseController@postInsertShift');
+Route::post('insertTime','CourseController@postInsertTime');
+Route::post('insertCourse','CourseController@postInsertCourse');
+Route::get('getCourses','CourseController@getCourses');
+Route::get('getMoreCourse','CourseController@getMoreCourse');
+Route::get('getMoreCourse','CourseController@getMoreCourse');
+Route::get('getAjaxCourse','CourseController@getAjaxCourse');
+
+
+/*----------Student Info-------------------*/
+Route::get('StudentInfo','StudentInfoController@getStudentInfo');
+Route::get('test','StudentInfoController@test');
+Route::post('upload','StudentInfoController@upload');
+
+
+
 
 
 

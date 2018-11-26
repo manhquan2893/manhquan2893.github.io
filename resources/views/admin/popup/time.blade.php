@@ -1,5 +1,5 @@
   <!-- Modal -->
-  <div class="modal fade" id="academic-year-dialog" role="dialog">
+  <div class="modal fade" id="time-dialog" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -9,11 +9,12 @@
           <h4 class="modal-title">Academic Year</h4>
         </div>
         <div class="modal-body">
-          <input id="new-academic" name="academic-year" type="text" class="form-control">
+          <label>new time</label>
+          <input id="new-time" type="text" class="form-control">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button class="btn btn-success btn-save-academic" type="button">Save</button>
+          <button class="btn btn-success btn-save-time" type="button">Save</button>
         </div>
       </div>
       
