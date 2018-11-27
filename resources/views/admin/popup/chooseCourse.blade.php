@@ -1,5 +1,5 @@
  <!-- Modal -->
-  <div class="modal fade" id="academic-year-dialog" role="dialog">
+  <div class="modal fade" id="choose-course-dialog" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->

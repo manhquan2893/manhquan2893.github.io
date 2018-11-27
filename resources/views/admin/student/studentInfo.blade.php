@@ -137,9 +137,9 @@
 	<script>
 		$(document).ready(function(){
 
-			$("#choose-course").on('click',function(){
+				$("#choose-course").on('click',function(){
 				
-				$("#form-choose-course").modal();
+				$("#choose-course-dialog").modal();
 			});
 			//display image before uploading
 			document.getElementById("file").onchange = function () {

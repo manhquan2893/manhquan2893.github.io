@@ -33,10 +33,11 @@ Route::get('getMoreCourse','CourseController@getMoreCourse');
 Route::get('getMoreCourse','CourseController@getMoreCourse');
 Route::get('getAjaxCourse','CourseController@getAjaxCourse');
 
+Route::get('getAllCourses','CourseController@getAllCourses');
 
 /*----------Student Info-------------------*/
 Route::get('StudentInfo','StudentInfoController@getStudentInfo');
-Route::get('test','StudentInfoController@test');
+Route::get('getChooseCourse','StudentInfoController@getChooseCourse');
 Route::post('upload','StudentInfoController@upload');
 
 
